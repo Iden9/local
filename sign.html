@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>登陆</title>
+    <link href='./images/ico.png' rel='icon' type='image/x-icon'/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: '微软雅黑';
+            text-decoration: none;
+            color: #4c4c4c;
+        }
+        body{
+            background: #F8FAFC;
+        }
+        .main{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 1280px;
+            height: 720px;
+            background: skyblue;
+        }
+        .main{
+            border-radius: 6px;
+            box-shadow: 0px 1px 10px .5px gainsboro;
+        }
+        .left-box{
+            float: left;
+            width: 746px;
+            height: 720px;
+            border-radius: 6px 0 0 6px;
+            background:#ECF4FE url('./images/bgimg.png') no-repeat;
+            background-size: 100%;
+            
+        }
+        .right-box{
+            float: left;
+            width: 534px;
+            height:720px;
+            background: #FFFFFF;
+            border-radius: 0 6px 6px 0;
+        }
+        .logn{
+            width: 440px;
+            height: 600px;
+            /* background:red; */
+            margin:60px 47px ;
+        }
+        h2{
+            text-align: center;
+        }
+        .weixin,.weibo{
+            width: 322px;
+            height: 55px;
+            border-radius: 6px;
+            text-align: center;
+            line-height: 55px;
+            margin: 20px 54px;
+            cursor: pointer;
+            text-indent: 2em;
+        }
+        .weixin:hover,.weibo:hover{
+            box-shadow: 0px 1px 5px .5px gainsboro;
+        }
+        .weixin{
+            background: #EDF4FE url('./images/weixin.png') no-repeat;
+            background-size: 40px 40px;
+            background-position: 70px;
+        }
+        .weibo{
+            background: #EDF4FE url('./images/weibo.png') no-repeat;
+            background-size: 40px 40px;
+            background-position: 70px;
+        }
+        p{
+            text-align: center;
+            margin-top: 100px;
+        }
+        span{
+            color: gainsboro;
+        }
+        form{
+            margin-top: 40px;
+        }
+        input{
+            border-radius: 6px;
+            width: 322px;
+            height: 55px;
+            border: 1px solid #EEF2F6;
+            background: #F8FAFB;
+            text-indent: 2em;
+            margin: 10px 54px;
+            
+        }
+        button{
+            border-radius: 6px;
+            width: 322px;
+            height: 55px;
+            background: #6B7DE3;
+            margin: 10px 54px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left-box"></div>
+        <div class="right-box">
+            <div class="logn">
+                <h2>用户登陆</h2>
+                <a href="./index.html">
+                    <div class="weixin">
+                        使用微信登陆
+                    </div>
+                </a>
+                <a href="./index.html">
+                    <div class="weibo">
+                        使用微博登陆
+                    </div>
+                </a>
+               
+                <p><span>————————</span>或使用电子邮件注册<span>————————</span></p>
+                <form action="">
+                    <input type="email" name="email" required placeholder="电子邮件"/>
+                    <input type="password" name="password" placeholder="密码 " title="必须包含大小写字母和数字的组合，不能使用特殊字符，长度在 8-10 之间" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{8,10}$"/>
+                    <button type="submit" name="sign">注册</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

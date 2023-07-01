@@ -1,0 +1,623 @@
+/* ---------------------重制----------------------- */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	font-family: '微软雅黑';
+}
+
+body {
+	/* background: #ECEFF8 ; */
+	background: #F8FAFC;
+	}
+
+/* header */
+header{
+	width: 100%;
+	height: 122px;
+	background: white;
+}
+.header-box{
+	position: relative;
+	/* background: red; */
+	width: 1200px;
+	height: 122px;
+	margin: 0 auto;
+}
+.header-box .logo-box .logo-a img{
+	float: left;
+	margin-top: 34px;
+	width: 205px;
+	height: 60px;
+}
+.serch-box{
+	float: left;
+	position: absolute;
+	left: 400px;
+	top: 42px;
+}
+.serch-box form input{
+	width: 408px;
+	height: 45px;
+	font-size: 12px;
+	background: #F4F4F4;
+	border-radius: 24px;
+	text-indent: 2em;
+}
+.serch-box form button{
+	position: absolute;
+	margin-left: -60px;
+	height: 45px;
+	width: 60px;
+	border-radius: 0 24px 24px 0;
+	background: #3273F5;
+	cursor: pointer;
+}
+.serch-box form button img{
+	width: 20px;
+}
+.header-box nav{
+	width:max-content ;
+	float: left;
+	position: absolute;
+	right: 0;
+	top: 45px;
+}
+.header-box nav ul{
+	width: max-content;
+	list-style: none;
+}
+.header-box nav ul li {
+	position: relative;
+	float: left;
+	padding: 6px 5px 0px 5px
+  }
+.header-box nav ul li a {
+	font-size: 13px;
+	line-height:14px;
+	display: block;
+	padding:6px 10px 6px 10px;
+	margin-bottom: 5px;
+	z-index: 6;
+	font-family: '微软雅黑';
+	position: relative;
+	color: red;
+	}
+
+.header-box nav ul li a {
+	font-size: 13px;
+	line-height:14px;
+	color: #D33934;
+	display: block;
+	padding:6px 10px 6px 10px;
+	margin-bottom: 5px;
+	z-index: 6;
+	font-family: '微软雅黑';
+	position: relative;
+	}
+.header-box nav ul li:hover a{
+	color:#355ADF;
+	}
+/* 导航 */	
+.nav-two {
+ width:100%;
+  height: 37px;
+  margin-bottom: 50px;
+ /* padding: 0px 10px; */
+  background:white;
+  box-shadow: 0px 3px 2px .2px #F4F4F4;
+  border-top: 2px solid #D33934;
+}
+.nav-two>ul {
+   width:1200px; 
+   list-style: none;
+   margin: 0 auto;
+   padding: 0;
+  }
+.nav-two>ul>li {
+  position: relative;
+  float: left;
+  padding: 6px 5px 0px 5px
+}
+.nav-two>ul>li>a {
+  position: relative;
+  font-size: 13px;
+  line-height:14px;
+  color: #4C4C4C;
+  display: block;
+  font-family: '微软雅黑';
+  padding:6px 20px 6px 20px;
+  margin-bottom: 5px;
+  z-index: 6;
+  position: relative;
+  }
+.nav-two>ul>li:hover>a{
+  color:#355ADF;
+}
+.nav-two>ul>li>a>span{
+	position: absolute;
+	top: 6px;
+	right: 40px;
+	font-size: 15px;
+	width: max-content;
+	display: block;
+	transform: rotate(-90deg);
+}
+.nav-two>ul>li:hover>a>span{
+	transform: rotate(-270deg);
+	transition: all .3s;
+}
+.list-ul{
+	position: relative;
+	left: 15px;
+	width: 100px;
+	height: 0;
+	background: transparent;
+	z-index: 99;
+	overflow: hidden;
+}
+.list-ul>li{
+	float: left;
+	width: 100px;
+	height: 30px;
+	background: #FFFFFF;
+	text-align: center;
+}
+.list-ul>li>a{
+	font-size: 13px;
+	line-height:14px;
+	color: #4C4C4C;
+	display: block;
+	font-family: '微软雅黑';
+	padding:6px 20px 6px 20px;
+}
+.list-ul>li>a:hover{
+	color: #D33934;
+}
+.nav-two>ul>li:hover>a +.list-ul{
+	transition: all .3s;
+	height: 240px;
+}
+
+/* 轮播新闻 */
+
+#wrap {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1200px;
+  height:500px;
+}
+
+#wrap .img-list {
+	display: flex;
+	position: absolute;
+	left: 0px;
+	width: 1200px;
+	height: 100%;
+	transition: 0.5s ease;
+  }      
+
+  #wrap .img-list a  {
+	display: block;
+	width: 1200px;
+	height: 500px;
+	cursor: pointer;
+  }   
+  #wrap .img-list a img:hover {
+	transform: scale(1.1,1.1);
+	transition: all .3s;
+  } 
+  .left-arrow,.right-arrow{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	display: block;
+	width: 40px;
+	height: 70px;
+	background-color: rgba(117, 112, 112, 0.7);
+	color: white;
+	user-select: none;
+	font-size: 30px;
+	text-align: center;
+	line-height: 70px;
+	text-decoration: none;
+  }
+
+  #wrap a.left-arrow {
+	left: 0;
+  }
+
+  #wrap a.right-arrow {
+	right: 0;
+  }
+
+  .circle-list {
+	display: flex;
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 120px;
+	height: 40px;
+	z-index: 8;
+  }
+  .circle-list > .circle {
+	margin: 0 5px;
+	width: 15px;
+	height: 15px;
+	background-color: #ecf0f1;
+	border-radius: 50%;
+  }
+
+  .circle-list > .circle.active {
+	background-color: #e74c3c;
+  }
+/* 主体第一部分 */
+
+.section-one{
+	position: absolute;
+	top: 700px;
+	left: 50%;
+	margin-left: -600px;
+	margin-top: 30px;
+	width: 1200px;
+	background: #fff;
+}
+.section-one a{
+	color: black;
+}
+.section-one a:hover{
+	color: #E74C3C;
+	text-decoration: underline;
+}
+.video>a>img{
+	width: 1200px;
+}
+/* 新闻左部 */
+.left-box{
+	float: left;
+	width: 360px;
+	height: 1345px;
+	border: 1px solid gainsboro;
+	border-radius: 6px;
+	margin-top: 30px;
+	margin-left: 2px;
+}
+.xxd>img{
+	width: 100px;
+	height: 100px;
+	margin-left: 140px;
+	margin-top: 10px;
+}
+.bwy{
+	position: absolute;
+	width: 350px;
+	height: 192px;
+	background: url(../images/bwy.jpg) no-repeat;
+	background-size: 350px ;
+	background-position: center center;
+	border-radius: 4px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.bwy:hover,.wgr:hover,.gz:hover{
+	background-size:380px;
+	background-position: center center;
+	transition: all .3s;
+}
+.bwy>span{
+	margin-top: 152px;
+	display: block;
+	width: 100%;
+	height: 40px;
+	background: rgba(0, 0, 0, .5);
+	font-size: 15px;
+	line-height: 40px;
+	color: #fff;
+	border-radius: 0 0 4px 4px;
+}
+.list-one{
+	margin-top: 200px;
+}
+.list-one ul li{
+	width: 295px;
+	font-size: 13px;
+	margin-left: 20px;
+}
+.list-one ul li span{
+	font-size: 30px;
+	color: #E4E3E4;
+}
+
+.wgr{
+	position: absolute;
+	width: 350px;
+	height: 192px;
+	background: url(../images/wgr.jpg) no-repeat;
+	background-size: 350px ;
+	background-position: center center;
+	border-radius: 4px;
+	margin-left: 5px;
+}
+
+.gz{
+	position: absolute;
+	width: 350px;
+	height: 192px;
+	background: url(../images/gt.jpg) no-repeat;
+	background-size: 350px ;
+	background-position: center center;
+	border-radius: 4px;
+	margin-left: 5px;
+}
+.gz>span{
+	position: absolute;
+	top: 152px;
+	display: block;
+	width: 100%;
+	height: 40px;
+	background: rgba(0, 0, 0, .5);
+	font-size: 15px;
+	line-height: 40px;
+	color: #fff;
+	border-radius: 0 0 4px 4px;
+}
+.title-logo>img{
+	width: 180px;
+	height: 100px;
+	margin-left: 90px;
+	margin-top: 10px;
+}
+/* 新闻中部 */
+.center-box{
+	float: left;
+	width: 360px;
+	margin-left: 60px;
+	margin-top: 30px;
+	background: #fff;
+}
+h3{
+	border-left: 5px solid #BF3535;
+	color: #B0403B;
+	text-indent: 4px;
+}
+.center-box>ul{
+	margin-top: 30px;
+	border-bottom: 1px solid gainsboro;
+}
+.center-box>ul li{
+	line-height:34px;
+	font-size: 13px;
+}
+.center-box>ul li span{
+	font-size: 30px;
+	color: #E4E3E4;
+}
+/* 新闻右部 */
+.right-box{
+	margin-left: 56px;
+	margin-top: 30px;
+	float: left;
+	background: #fff;
+	width: 360px;
+	height: 1370px;
+}
+.right-box ul li{
+	margin-bottom: 24px;
+	overflow: hidden;  
+	white-space: nowrap; 
+	text-overflow: ellipsis; 
+	font-size: 13px;
+	
+}
+.shoubu{
+	border-left: 5px solid #BF3535;
+	text-indent: 4px;
+}
+.right-box>ul{
+	margin-top: 42px;
+}
+.right-box>ul li span{
+	margin-right: 10px;
+	display: inline-block;
+	text-align: center;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	background: #EEE8EC;
+	border-radius: 4px;
+	color: #9BA1AD;
+}
+.right-box ul li:nth-child(1)>span{
+	color: #fff;
+	background:#C23433 ;
+}
+.right-box ul li:nth-child(2)>span{
+	color: #fff;
+	background:#D76E2B ;
+}
+.right-box ul li:nth-child(3)>span{
+	color: #fff;
+	background:#F6C552 ;
+}
+.right-box img{
+	width: 350px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+/* 第二部分 */
+.section-two{
+	position: absolute;
+	top: 2210px;
+	left: 50%;
+	margin-left: -600px;
+	width: 1200px;
+	height: 4590px;
+	background:#fff
+}
+
+.list-nav2{
+	width: 100%;
+	margin-top: 20px;
+}
+.list-nav2>nav>ul>li{
+	border-bottom: 2px solid gainsboro;
+}
+.list-nav2>nav>ul>li{
+	font-size: 20px;
+	padding: 10px 55px 10px 55px;
+	float: left;
+}
+.list-nav2>nav>ul>li a{
+	padding-bottom: 5px;
+	color: #4C4C4C;
+}
+.list-nav2>nav>ul>li:hover a{
+	border-bottom: 2px solid #BC403A;
+	color:#BC403A;
+}
+.z{
+	width: 100%;
+	/* background: yellow; */
+	margin-top: 20px;
+}
+.y{
+	width: 100%;
+	height: 270px;
+}
+.x{
+	float: left;
+	width: 870px;
+	height: 270px;
+	background: #F5F5F7;
+}
+.x a{
+	color: #4C4C4C;
+}
+.x a:hover{
+	color: #B3403A;
+}
+.list-group a{
+	color: #4C4C4C;
+}
+.list-group a:hover{
+	color: #B3403A;
+}
+.list-group>ul{
+	float: left;
+}
+.list-group>ul>li{
+	padding: 16px 10px 16px 11px;
+	border-bottom: 1px solid gainsboro;
+	font-size: 13px;
+}
+.list-group>ul>li:last-child{
+	border:none;
+}
+.x>h2{
+	margin-top: 36px;
+	margin-left: 36px;
+}
+.x>p{
+	width: 700px;
+	margin-top: 36px;
+	margin-left: 36px;
+	color: #656666;
+	font-size: 15px;
+}
+.but1{
+	margin-left: 36px;
+	margin-top: 36px;
+}
+.but1>a{
+	display: inline-block;
+	padding: 2px 3px;
+	background: gainsboro;
+	font-size: 12px;
+	color: #666666;
+}
+
+.img_box{
+	float: left;
+	width: 100%;
+	height: 300px;
+}
+.img_box>div{
+	overflow: hidden;
+	width: 380px;
+	height: 210px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 40px;
+	vertical-align: bottom;
+}
+.img_box>div:hover>img{
+	transition: all .3s;
+	transform: scale(1.1,1.1);
+}
+/*------------footer */ 
+footer {
+	position: absolute;
+	top: 6800px;
+	width: 100%;
+	height: 300px;
+	background:#333333;
+	}
+
+footer>ul{
+	margin-left: 50px;
+}
+footer>ul li{
+	margin-top: 50px;
+	float: left;
+	margin-left: 20px;
+	color: #fff;
+	font-size: 12px;
+}
+footer>h3{
+	color:#EA3323;
+	margin-top: 20px;
+	margin-left: 70px;
+}
+footer>ul li a{
+	color: #fff;;
+}
+.footer-span{
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -400px;
+	display: block;
+	width: 800px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+}
+footer>img{
+	position: absolute;
+	top: 70px;
+	right: 50px;
+	width: 205px;
+	height: 60px;
+}
+
+/* maodian */
+.maodian{
+	position: fixed;
+	width: 40px;
+	height: 90px;
+	right: 50px;
+	bottom: 100px;
+	background: gainsboro;
+}
+.maodian>a>img{
+	width: 40px;
+	height: 40px;
+}
+

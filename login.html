@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆页</title>
+    <link href='./images/ico.png' rel='icon' type='image/x-icon'/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Microsoft YaHei';
+            outline: none;
+            border: none;
+        }
+        body{
+            background:#fff ;
+        }
+        .main{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 1100px;
+            height: 620px;
+            box-shadow:  0px 1px 10px .5px gainsboro;
+            /* background:skyblue; */
+        }
+        .box{
+            float: left;
+            width: 65%;
+            height: 100%;
+            background: url('');
+        }
+        .left-box{
+            width: 100%;
+            height: 100%;
+            background: rgba(16,32,172, .7) url('./images/bgimg.png') no-repeat;
+            background-size: 95%;
+        }
+        .right-box{
+            float: left;
+            width: 35%;
+            height: 100%;
+            background:#FCFCFC;
+        }
+        form{
+            position: relative;
+            margin: 100px 60px;
+            /* background:blue; */
+        }
+        .text-one{
+            font-size: 28px;
+            color: #4A5DF2;
+        }
+        .text-two{
+            position: absolute;
+            top: 60px;
+        }
+        .text-three{
+            position: absolute;
+            top: 150px;
+        }
+        .text-two,.text-three{
+            font-size: 15px;
+            color:#C1C3D9 ;
+        }
+        .log_in{
+            background: #1431F4;
+            width: 130px;
+            height: 35px;
+            color: white;
+            border-radius: 24px;
+            cursor: pointer;
+            margin-top: 100px;
+        }
+        .sign_in{
+            width: 130px;
+            height: 35px;
+            color: #1431F4;
+            border-radius: 24px;
+            cursor: pointer;
+            margin-top: 100px;
+            /* background: #E9E9ED; */
+        }
+        .log_in:hover{
+            transition: all .3s;
+            background: rgba(20,49,244, .7);
+        }
+        .sign_in:hover{
+            transition: all .3s;
+            background: rgba(208,208,214, .7);
+        }
+        input{
+            margin-top: 30px;
+            width: 270px;
+            height: 45px;
+            border-bottom: 2px solid gainsboro;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="left-box"></div>
+        </div>
+       
+        <div class="right-box">
+            <form action="">
+                <span class="text-one">登陆</span>
+                <br>
+                <span class="text-two">EMAIL</span>
+                <br>
+                <input type="email"/>
+                <br>
+                <span class="text-three">PASSWORD</span>
+                <br>
+                <input type="password" placeholder=""/>
+                <br>
+                <button type="submit" class="log_in">登陆</button>
+                <a href="./sign.html"><button type="submit" class="sign_in">注册</button></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

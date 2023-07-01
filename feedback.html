@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <link href='./images/ico.png' rel='icon' type='image/x-icon'/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+        body{
+            background: url('./images/bg2.jpg')no-repeat;
+            background-size: 100%;
+        }
+        #hire{
+            position: relative;
+            top: 200px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 820px;
+            height: max-content;
+            /* background:red; */
+        }
+        h3{
+            text-align: center;
+            font-family: '微软雅黑';
+            font-size: 40px;
+            font-weight:inherit;
+            margin-bottom: 40px;
+        }
+        .row{
+            /* background: skyblue; */
+        }
+        .form-group{
+            float: left;
+        }
+        .form-group>input[type="text"],input[type="email"]{
+            width: 384px;
+            height: 49px;
+            margin-left: 20px;
+        }
+        .form-group-two>input[type="text"]{
+            width: 792px;
+            height: 49px;
+            margin-left: 20px;
+            margin-top: 18px;
+        }
+        textarea{
+            width: 792px;
+            height: 176px;
+            margin-left: 20px;
+            margin-top: 18px;
+            border: none;
+            line-height: 40px;
+        }
+        button{
+            position: absolute;
+            margin-top: 40px;
+            left: 50%;
+            margin-left: -68px;
+            width: 136px;
+            height: 53px;
+            background: #67C99C;
+            color: white;
+            border: none;
+        }
+        input,textarea{
+            text-indent: 1em;
+            border: 1px solid gainsboro;
+            color: #6E767D;
+            font-size:16px
+        }
+    </style>
+</head>
+<body>
+    <section class="contact py-5" id="hire">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="tittle-text">联系我们 !</h3>
+			<div class="contact-form mx-auto text-center">
+				<form method="post" action="#">
+					<div class="row">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="姓名" name="name" required="">
+						</div>
+						<div class="qform-group">
+							<input type="email" class="form-control" placeholder="电子邮件" name="email" required="">
+						</div>
+					</div>
+					<div class="form-group-two">
+						<input type="text" class="form-control" placeholder="主题" name="subject" required="">
+					</div>
+					<div class="form-group-three">
+						<textarea name="message" class="form-control" placeholder="信息" required=""></textarea>
+					</div>
+					<button type="submit" class="btn submit-button mt-md-4 mt-3">提交</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
